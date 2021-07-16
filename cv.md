@@ -7,13 +7,16 @@
 
 ## About me:
 
-I am 20 years old. I am from Belarus. I want to work EPAM.
+I am 20 years old. I am from Belarus. I want to work EPAM. I am fond of programming, layout. My priorities is acquisition of skills in the field of web development.
+ 
 
 ## Skills:
 
 - HTML
 - CSS
 - JavaScript
+- Git
+- MySQL
 
 ## Work experience:
 
@@ -23,8 +26,6 @@ I am 20 years old. I am from Belarus. I want to work EPAM.
 ## Education:
 
 Polessky State University
-faculty: Engineering
-specialty: Information Systems and Technologies
 
 ## English
 
