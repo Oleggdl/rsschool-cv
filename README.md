@@ -1,1 +1,1 @@
-https://Oleggdl.github.io/rsschool-cv/cv
+https://Oleggdl.github.io/rsschool-cv/
