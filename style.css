@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 18px;
+}
+header{
+    display: flex
+}
+.cv{
+    background-color: rgb(198, 206, 214);
+    margin: 30px auto;
+    max-width: 70%;   
+}
+@media screen and (max-width: 975px){
+	.cv {
+		max-width: 95%;   
+
+	}
+}
+.cv_main{
+   
+    padding: 40px 40px 40px 40px ;
+}
+.contacts{
+    margin-left: 50px;
+    margin-top: -10px;
+}
+footer{
+    text-align: center;
+}
+.img_rsschool{
+    margin-left: 40px;
+}
+.github{
+    margin-left: 40px;
+}
+.date_footer{
+    margin-left: 40px;
+}
