@@ -1,32 +1,41 @@
+:root {
+    --main_color: #457abe;
+  }
 body{
     margin: 0;
     font-family: 'Open Sans', sans-serif ;
-    font-size: 18px;
+    font-size: 16px;
+    
 }
-header{
-    display: flex
+h1{
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 55px;
+    letter-spacing: 7px;
 }
-.cv{
-    background-color: rgb(198, 206, 214);
-    margin: 30px auto;
+
+.container{
+    background-color: #c4c3c3;
+    margin: auto;
+
     max-width: 70%;   
 }
 @media screen and (max-width: 975px){
-	.cv {
+	.container {
 		max-width: 95%;   
 
 	}
 }
-.cv_main{
-   
-    padding: 40px 40px 40px 40px ;
+.header_and_article{
+    display: flex;
+
 }
-.contacts{
-    margin-left: 50px;
-    margin-top: -10px;
+.Name{
+    
+    margin-top: 90px;
 }
 footer{
     text-align: center;
+    margin-bottom: 30px;
 }
 .img_rsschool{
     margin-left: 40px;
@@ -37,3 +46,85 @@ footer{
 .date_footer{
     margin-left: 40px;
 }
+span{
+    font-weight: bold;
+}
+.frontend_developer{
+    font-size: 11px;
+    background-color: var(--main_color);
+    color: #ffff;
+    padding: 2px;
+    width: 149px;
+    letter-spacing: 1.5px;
+    margin-top: -35px;
+}
+article{
+    background-color: var(--main_color);
+    margin-left: 10%;
+    padding-top:110px;
+    padding-right: 10px;
+    color: #ffff;
+    width: 59%;
+    padding-bottom: 40px;
+
+}
+li{
+    padding-top: 10px;
+}
+.line1{
+    height: 3.5px;
+    width: 50px;
+    background-color: var(--main_color);
+    margin-top: 40px;
+    
+}
+.about_me{
+   
+    width: 80%;
+    text-align: justify;
+    margin-top: 40px;   
+}
+.header_and_article{
+    
+    margin-left: 70px;
+    /* width: 80%; */
+    /* background-color: black; */
+}
+main{
+    margin-left: 70px;
+    margin-top: 50px;
+}
+figure{
+    margin-left: 0;
+    width: 30%;
+}
+.figure_and_skills{
+    display: flex;
+}
+.skills_and_english{
+    display: flex
+}
+.experience_and_education{
+    margin-left: 5%;
+}
+.line2{
+    height: 3.5px;
+    width: 50px;
+    background-color: var(--main_color);
+    margin-top: -15px;
+    margin-bottom: 15px;
+    
+}
+.education{
+    margin-top: 50px;
+}
+.work_experience{
+    margin-left: 10%;
+}
+.english{
+  margin-top: 40px;
+}
+
+
+
+
