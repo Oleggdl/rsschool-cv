@@ -14,7 +14,7 @@ h1{
 }
 
 .container{
-    background-color: #c4c3c3;
+    background-color: #f3f3f3;
     margin: auto;
 
     max-width: 70%;   
@@ -35,7 +35,7 @@ h1{
 }
 footer{
     text-align: center;
-    margin-bottom: 30px;
+    padding-bottom: 20px;
 }
 .img_rsschool{
     margin-left: 40px;
@@ -87,8 +87,6 @@ li{
 .header_and_article{
     
     margin-left: 70px;
-    /* width: 80%; */
-    /* background-color: black; */
 }
 main{
     margin-left: 70px;
@@ -100,9 +98,6 @@ figure{
 }
 .figure_and_skills{
     display: flex;
-}
-.skills_and_english{
-    display: flex
 }
 .experience_and_education{
     margin-left: 5%;
@@ -119,10 +114,17 @@ figure{
     margin-top: 50px;
 }
 .work_experience{
-    margin-left: 10%;
+  
+    margin-top: 40px;
 }
 .english{
-  margin-top: 40px;
+    margin-left: 10%;
+}
+.skills_and_english_and_code{
+    display: flex;
+}
+.code_example{
+    margin-left: 10%;
 }
 
 
