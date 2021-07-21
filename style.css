@@ -6,6 +6,13 @@ body{
     font-family: 'Open Sans', sans-serif ;
     font-size: 16px;
     
+    
+}
+@media screen and (max-width: 800px){
+	.body {
+		overflow-x: scroll;
+
+	}
 }
 h1{
     font-family: 'Otomanopee One', sans-serif;
@@ -19,12 +26,19 @@ h1{
 
     max-width: 70%;   
 }
-@media screen and (max-width: 975px){
+@media screen and (max-width: 850px){
 	.container {
-		max-width: 95%;   
+        max-width: 99%;    
 
 	}
 }
+@media screen and (min-width: 850px) and (max-width: 1200px){
+	.container {
+		max-width: 85%;   
+
+	}
+}
+
 .header_and_article{
     display: flex;
 
@@ -92,7 +106,7 @@ main{
     margin-left: 70px;
     margin-top: 50px;
 }
-figure{
+.photo{
     margin-left: 0;
     width: 30%;
 }
