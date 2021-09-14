@@ -160,3 +160,93 @@ section{
 p{
     line-height: 1.8;
 }
+.listSkillsItemelement {
+
+    width: 0.75rem;
+    height: 0.75rem;
+    background-color: var(--mainColor);
+    display: inline-block;
+    margin-right: 1rem;
+    
+}
+.section:last-child {
+    margin-bottom: 0;
+}
+.section {
+    margin: 0 auto;
+    max-width: 700px;
+    background-color: rgba(0, 0, 0);
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.listSkills{
+    padding: 2rem;
+   
+}
+.listSkillsItem{
+    letter-spacing: 1.5px;
+    line-height:1.7
+}
+.title{
+    margin-bottom: 2rem;
+
+}
+.titleElement{
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--mainColor);
+    display: inline-block;
+    margin-right: 0.2rem;
+}
+.educationSecondRight{
+    width: 250px;
+    max-width: 100%;
+    padding: 2rem;
+}
+.educationSecondDate{
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: var(--mainColor);
+}
+.educationSecondName{
+   
+    font-size: 0.75rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+.educationSecondPlace{
+    font-style: italic;
+}
+.educationSecondLeft{
+    width: 450px;
+    max-width: 100%;
+    padding: 2rem;
+}
+.projectImg{
+    height: 235px;
+    width: 250px;
+    background-position: 50%;
+    background-size: cover;
+}
+.imageClock{
+    background: url(./img/Clock1.png);
+}
+.projectTitle{
+    position: relative;
+    color: var(--mainColor);
+    font-weight: 900;
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+.projectTitle::before {
+    position: absolute;
+    content: '';
+    width: 0.75rem;
+    height: 3.5rem;
+    background-color: var(--mainColor);
+    left: -2rem;
+}
+.projectSectionLeft{
+    margin: 2rem;
+}
