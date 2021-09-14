@@ -1,146 +1,162 @@
-:root {
-    --main_color: #457abe;
-  }
-body{
+*{
     margin: 0;
-    font-family: 'Open Sans', sans-serif ;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --mainColor:rgb(255, 29, 29);
+    --textColor:rgb(224, 224, 224);
+}
+body{
+    color: var(--textColor);
+    background-color: rgb(34, 34, 34);
     font-size: 16px;
-    
-    
-}
-@media screen and (max-width: 800px){
-	.body {
-		overflow-x: scroll;
-
-	}
-}
-h1{
-    font-family: 'Otomanopee One', sans-serif;
-    font-size: 55px;
-    letter-spacing: 7px;
-}
-
-.container{
-    background-color: #f3f3f3;
-    margin: auto;
-
-    max-width: 70%;   
-}
-@media screen and (max-width: 850px){
-	.container {
-        max-width: 99%;    
-
-	}
-}
-@media screen and (min-width: 850px) and (max-width: 1200px){
-	.container {
-		max-width: 85%;   
-
-	}
-}
-
-.header_and_article{
-    display: flex;
-
-}
-.Name{
-    
-    margin-top: 90px;
-}
-footer{
-    text-align: center;
-    padding-bottom: 20px;
-}
-.img_rsschool{
-    margin-left: 40px;
-}
-.github{
-    margin-left: 40px;
-}
-.date_footer{
-    margin-left: 40px;
-}
-span{
-    font-weight: bold;
-}
-.frontend_developer{
-    font-size: 11px;
-    background-color: var(--main_color);
-    color: #ffff;
-    padding: 2px;
-    width: 149px;
-    letter-spacing: 1.5px;
-    margin-top: -35px;
-}
-.contacts{
-    background-color: var(--main_color);
-    margin-left: 10%;
-    padding-top:110px;
-    padding-right: 10px;
-    color: #ffff;
-    width: 59%;
-    padding-bottom: 40px;
-
+    font-family: 'Open Sans', sans-serif ;
+    min-height: 100vh;
+    transition: all .5s ease;
+    flex-direction: column;
+   justify-content: space-between;
 }
 li{
-    padding-top: 10px;
+    list-style: none;
 }
-.line1{
-    height: 3.5px;
-    width: 50px;
-    background-color: var(--main_color);
-    margin-top: 40px;
+.headerMain{
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 40px 2rem 30px;
+}
+header{
+    background-color: rgb(17, 17, 17);
+}
+.navHeader{
+    min-height: 40px;
+    display: inline-block;
+}
+.navLogoLink{
+    text-decoration: none;
+    color: var(--textColor);
+    display: inline-block;
+}
+.headerNavigation{
+    display: inline-block;
+}
+.navLogo{
+    display: inline-block;
+    margin-right: 5rem;
+    margin-bottom: 1rem;
+}
+.headerNavigationItem{
+    display: inline;
+}
+.navLogoIcon{
+    display: inline-block;
+    background-color: var(--mainColor);
+    width: 1rem;
+    height: 1rem;
+    border-radius: 5%;
+    margin-right: 0.6rem;
+}
+.navLogoName{
+    font-weight: bold;
+    font-family: 'Otomanopee One', sans-serif;
+    font-size: 1.5rem;
     
 }
-.about_me{
-   
-    width: 80%;
-    text-align: justify;
-    margin-top: 40px;   
-}
-.header_and_article{
+.navLogoDescription{
+    font-size: 1.1rem;
     
-    margin-left: 70px;
 }
-main{
-    margin-left: 70px;
-    margin-top: 50px;
+.headerNavigationLink{
+    text-decoration: none;
+    color: var(--textColor);
+    font-size: 0.9rem;
+    padding: 0.5rem 1.8rem;
+    display: inline-block;
+    letter-spacing: 1px;
 }
-.photo{
-    margin-left: 0;
-   
+.navLogoText{
+    display: inline-block;
 }
-.figure_and_skills{
+
+/* Main */
+section{
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+}
+.mainContainer{
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 0 2rem;
+}
+.aboutMe{
+    margin-top: 5vw;
+
+}
+.aboutMeContainer{
     display: flex;
+    /* flex-wrap: wrap-reverse; */
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin-bottom: 5rem;
 }
-.experience_and_education{
-    margin-left: 5%;
+.aboutMeLeft{
+    background-color: rgb(17, 17, 17);
+    flex: 0 0 270px;
+    box-shadow: -8px 4px 15px 2px rgb(0 0 0 / 20%);
+    text-align: center;
 }
-.line2{
-    height: 3.5px;
-    width: 50px;
-    background-color: var(--main_color);
-    margin-top: -15px;
-    margin-bottom: 15px;
-    
+.aboutMeLeftPhotoMyphoto{
+    display: inline-block;
+    /* width: 200px; */
+    /* border-radius: 50%; */
+    margin-bottom: 2rem;
 }
-.education{
-    margin-top: 50px;
+.aboutMeLeftName{
+    margin: 0 auto 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 900;
+    line-height: 1.9rem;
 }
-.work_experience{
-  
-    margin-top: 40px;
+.aboutMeLeftLine{
+    margin: 0 auto;
+    height: 2px;
+    width: 80px;
+    background-color: var(--mainColor);
+    margin-bottom: 1.5rem;
 }
-.english{
-    margin-left: 10%;
+.aboutMeLeftJob{
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    font-weight: 400;
+    font-size: 1rem;
 }
-.skills_and_english_and_code{
-    display: flex;
-}
-.code_example{
-    margin-left: 10%;
+.fab, .fas {
+    font-size: 1.25rem;
+    color: #000000;
 }
 
-
-
-
+.fab:hover {
+    /* content: url(./img/GitHub3.png); */
+}
+/* .aboutMeContactsLinks{
+    text-decoration: none;
+    color: #000000;
+} */
+.fa-github:before {
+    content: url(./img/GitHub2.png);
+}
+.aboutMeRight{
+    display: inline-block;
+    flex: 1 1 440px;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+.aboutMeRightHello{
+    font-size: 5vmax;
+    font-weight: 900;
+}
+p{
+    line-height: 1.8;
+}
