@@ -52,8 +52,9 @@ header{
     padding: 1rem 0;
     position: relative;
   }
+
   
-.headerNavigationLink:hover{
+.headerNavigationItem:hover .headerNavigationLink{
 color: var(--mainColor);
 transition: 0.2s linear;
 
@@ -200,8 +201,12 @@ section{
     color: var(--mainColor);
 }
 
-
-
+h1{
+    display: inline-block;
+}
+h4{
+    font-size: 1.3rem;
+}
 .aboutMeRight{
     display: inline-block;
     flex: 1 1 440px;
@@ -294,6 +299,7 @@ p{
     font-size: 1.25rem;
     margin-bottom: 1rem;
     text-transform: uppercase;
+   
 }
 .projectTitle::before {
     position: absolute;
@@ -302,9 +308,22 @@ p{
     height: 3.5rem;
     background-color: var(--mainColor);
     left: -2rem;
+   
 }
 .projectSectionLeft{
     margin: 2rem;
+    
+}
+
+.projectDescription{
+    color: var(--textColor);
+    
+}
+a { 
+    text-decoration: none; 
+   } 
+.linkProject{
+    margin-bottom: 2rem;
 }
 pre {
     width: 100%;
@@ -418,7 +437,7 @@ footer{
     color: var(--white);
     text-decoration: none;
     cursor: pointer;
-    /* transition: 1s linear; */
+    color: rgb(17, 17, 17);
  }
  .aboutMeLeftLinks{
      display: flex;
@@ -429,3 +448,24 @@ footer{
  .aboutMeLeftLinksItem{
      padding: 0 0.5rem;
  }
+ .linkJSclok{
+     border: 0 var(--mainColor) solid;
+     transition: box-shadow 0.3s linear;
+
+ }
+ 
+.linkJSclok:hover { 
+    box-shadow: 0px 0px 0px 0.2rem var(--mainColor); 
+}
+
+/* @media screen and (max-width: 600px){
+	body {
+		font-size: 10px;
+	}
+
+    h1{
+      
+        margin-bottom: 40px;
+    }
+    
+} */
