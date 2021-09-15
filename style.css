@@ -45,9 +45,39 @@ header{
     margin-right: 5rem;
     margin-bottom: 1rem;
 }
-.headerNavigationItem{
-    display: inline;
+.headerNavigationItem {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 1rem 0;
+    position: relative;
+  }
+  
+.headerNavigationLink:hover{
+color: var(--mainColor);
+transition: 0.2s linear;
+
 }
+  .headerNavigationItem::before{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0;
+    right: 0;
+    height: 1px;
+    bottom: 5px;
+    
+    background-color: var(--mainColor);
+    transition: width ease-in-out 0.25s;
+  }
+  
+  .headerNavigationItem:hover::before {
+    width: 100%;
+    left: 0;
+   
+    background-color:  var(--mainColor);
+    transition: width ease-in-out 0.25s;
+  }
 .navLogoIcon{
     display: inline-block;
     background-color: var(--mainColor);
@@ -70,7 +100,7 @@ header{
     text-decoration: none;
     color: var(--textColor);
     font-size: 0.9rem;
-    padding: 0.5rem 1.8rem;
+    padding: 0.5rem 1rem;
     display: inline-block;
     letter-spacing: 1px;
 }
@@ -128,7 +158,7 @@ section{
 }
 .aboutMeLeftJob{
     margin: 0 auto;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-weight: 400;
     font-size: 1rem;
 }
@@ -136,17 +166,40 @@ section{
     font-size: 1.25rem;
     color: #000000;
 }
+.headerGithubcontact{
+    width: 1.5rem;
+    height: 1.5rem;
+    content: url(./svg/github_white.svg);
+   
+ 
+}
 
-.fab:hover {
-    /* content: url(./img/GitHub3.png); */
+.headerGithubcontact:hover {
+    content: url(./svg/github.svg);
+    /* transition: 3s; */
 }
-/* .aboutMeContactsLinks{
-    text-decoration: none;
-    color: #000000;
-} */
-.fa-github:before {
-    content: url(./img/GitHub2.png);
+
+.headertgcontact{
+    width: 1.5rem;
+    height: 1.5rem;
+    content: url(./svg/telegram_white.svg);
 }
+.headervkcontact{
+    width: 1.5rem;
+    height: 1.5rem;
+    content: url(./svg/vk_white.svg);
+}
+.headertgcontact:hover{
+    content: url(./svg/telegram.svg);
+}
+.headervkcontact:hover{
+    content: url(./svg/vk.svg);
+}
+
+
+
+
+
 .aboutMeRight{
     display: inline-block;
     flex: 1 1 440px;
@@ -238,6 +291,7 @@ p{
     font-weight: 900;
     font-size: 1.25rem;
     margin-bottom: 1rem;
+    text-transform: uppercase;
 }
 .projectTitle::before {
     position: absolute;
@@ -250,3 +304,126 @@ p{
 .projectSectionLeft{
     margin: 2rem;
 }
+pre {
+    width: 100%;
+    padding-left: 0;
+    white-space: normal;
+    display: flex;
+    justify-content: center;
+  }
+  
+  pre code {
+    white-space: pre-wrap;
+  }
+  
+  pre code.hljs {
+    background-color: var(--bg);
+    padding: 2rem;
+  }
+  .contactsLinks{
+     text-decoration: none;
+     color: var(--textColor);
+  }
+  .contactsLinks:hover{
+    text-decoration: none;
+    color: var(--mainColor);
+    transition: 0.2s;
+ }
+ .contactsImgTg{
+     background: url(./svg/telegram.svg);
+ }
+ .contactsImgVk{
+    background: url(./svg/vk.svg);
+ }
+ .contactsImgGh{
+    background: url(./svg/github.svg);
+ }
+ .contactsImgAds{
+    background: url(./svg/map.svg);
+ }
+ .contactsImgGm{
+    background: url(./svg/email.svg);
+ }
+
+ .contactsImg{
+    /* background-position: center left; */
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    width: 17px;
+    height: 17px;
+    margin-right: 0.2rem;
+    display: inline-block;
+ }
+.address{
+    display: inline-block;
+    font-style: italic;
+}
+.githublogo{
+    background: url(./svg/github_white.svg);
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+}
+
+.footerMain{
+    max-width: 100vw;
+    margin: 0 auto;
+    padding: 3rem 0rem 3rem;
+   
+}
+.footerMainList{
+    justify-content: center;
+    display: flex;
+
+}
+footer{
+    background-color: rgb(17, 17, 17);
+}
+.footerMainItem{
+    padding: 0 2rem;
+}
+.rsschoollogo{
+    background: url(./svg/rs_school_js.svg);
+    width: 8rem;
+    height: 3rem;
+    background-size: cover;
+}
+.footerMainItemText{
+    margin-top: 1rem;
+}
+ .imageVideo{
+     background: url(./img/customVideoPlayer.png);
+     background-size: cover;
+ }
+ .buttontop{
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 30px;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    border-radius: 50%;
+    outline: none;
+    transition: 0.2s;
+   
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    background-color: var(--mainColor);
+    border: 1px solid var(--pink);
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+    /* transition: 1s linear; */
+ }
+ .aboutMeLeftLinks{
+     display: flex;
+     margin: 0 auto;
+     justify-content: center;
+     
+ }
+ .aboutMeLeftLinksItem{
+     padding: 0 0.5rem;
+ }

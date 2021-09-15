@@ -10,9 +10,16 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
         rel="stylesheet">
+    <!-- <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✌️</text></svg>"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Rsschool-cv</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
 
 </head>
 
@@ -38,8 +45,10 @@
                                 projects</a></li>
                         <li class="headerNavigationItem"><a class="headerNavigationLink" href="#languages">Languages</a>
                         </li>
+                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#codeexample">Code
+                                example</a></li>
                         <li class="headerNavigationItem"><a class="headerNavigationLink" href="#video">Video</a></li>
-                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#contact">Contact</a>
+                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#contact">Contacts</a>
                         </li>
 
                     </ul>
@@ -47,6 +56,7 @@
             </div>
         </header>
         <main>
+            <button id="scroll" class="buttontop" title="Go to top" type="button" style="display: none;">Top</button> 
             <div class="mainContainer">
                 <section class="aboutMe">
                     <div class="aboutMeContainer">
@@ -59,16 +69,18 @@
                             <div class="aboutMeLeftJob">FRONT-END DEVELOPER</div>
                             <ul class="aboutMeLeftLinks">
                                 <li class="aboutMeLeftLinksItem">
-                                    <a href="https://github.com/Oleggdl" class="aboutMeContactsLinks" target="_blank"><i
-                                            class="fab fa-github"></i></a>
+                                    <a href="https://github.com/Oleggdl" class="aboutMeContactsLinks" target="_blank">
+                                        <i
+                                            class="headerGithubcontact"></i></a>
                                 </li>
                                 <li class="aboutMeLeftLinksItem">
-                                    <a href="https://github.com/Oleggdl" class="aboutMeContactsLinks"
-                                        target="_blank"></a>
+                                    <a href="https://t.me/oleghaaaaa" class="contactsLinks" target="_blank"><i
+                                        class="headertgcontact"></i></a>
                                 </li>
                                 <li class="aboutMeLeftLinksItem">
-                                    <a href="mailto:oblotskiyj@gmail.com" class="aboutMeContactsLinks"
-                                        target="_blank"></a>
+                                    <a href="mailto:oblotskiyj@gmai.com" class="contactsLinks"
+                                    target="_blank"><i
+                                    class="headervkcontact"></i></a>
                                 </li>
                             </ul>
                         </div>
@@ -147,7 +159,6 @@
                         <div class="projectSectionLeft">
                             <h3 class="projectTitle">JS-CLOCK</h3>
                             <p>JS Clock is a JavaScript mechanical clock with moving hands</p>
-
                         </div>
                         <div class="projectSectionRight">
                             <div class="projectImg imageClock"></div>
@@ -155,22 +166,12 @@
                     </article>
                     <article class="section projectSection">
                         <div class="projectSectionLeft">
-                            <h3 class="projectTitle"></h3>
-                            <p></p>
-                            <p></p>
+                            <h3 class="projectTitle">Custom Video Player</h3>
+                            <p>Custom HTML5 Video Player is a video player that runs as intended by the designer and does not depend on the browser or device in use.</p>
+                
                         </div>
                         <div class="projectSectionRight">
                             <div class="projectImg imageVideo"></div>
-                        </div>
-                    </article>
-                    <article class="section projectSection">
-                        <div class="projectSectionLeft">
-                            <h3 class="projectTitle"></h3>
-                            <p></p>
-                            <p></p>
-                        </div>
-                        <div class="projectSectionRight">
-                            <div class="projectImg imageqw"></div>
                         </div>
                     </article>
                 </section>
@@ -194,14 +195,93 @@
                         </ul>
                     </div>
                 </section>
-                <section class="video"></section>
-                <section class="contact"></section>
+                <section class="codeExample">
+                    <h2 id="codeexample" class="title">
+                        <div class="titleElement"></div> Code Example
+                    </h2>
+                    <div class="section">
+                        <pre>
+                        <code class="codeJS">
+function volumeOnOffSvg() {
+  if (document.getElementById('volume').value > 0) {
+    volumeOn = document.getElementById('volume').value;
+    document.getElementById('volume').value = 0;
+    videos[activeVideo].volume = volume.value;
+    const value = ranges.value * 100;
+    ranges.style.background = `linear-gradient(to right, #24809E 0%, #24809E ${value}%, #C4C4C4 ${value}%, white 100%)`
+  } else {
+    document.getElementById('volume').value = volumeOn;
+    videos[activeVideo].volume = volume.value;
+    const value = ranges.value * 100;
+    ranges.style.background = `linear-gradient(to right, #24809E 0%, #24809E ${value}%, #C4C4C4 ${value}%, white 100%)`
+  }
+}
+volumeOff.addEventListener('click', volumeOnOffSvg) 
+                        </code>
+                    </pre>
+                    </div>
+                </section>
+                <section class="video">
+                    <h2 id="video" class="title">
+                        <div class="titleElement"></div> Video
+                    </h2>
+                </section>
+                <section class="contact">
+                    <h2 id="contact" class="title">
+                        <div class="titleElement"></div> Contacts
+                    </h2>
+                    <div class="section">
+                        <ul class="listSkills">
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgTg"></div>
+                                <a href="https://t.me/oleghaaaaa" class="contactsLinks" target="_blank">Telegram</a>
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgVk"></div>
+                                <a href="https://vk.com/blockol" class="contactsLinks" target="_blank">VK</a>
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgGh"></div>
+                                <a href="https://github.com/Oleggdl" class="contactsLinks" target="_blank">GitHub</a>
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgGm"></div>
+                                <a href="mailto:oblotskiyj@gmai.com" class="contactsLinks"
+                                    target="_blank">oblotskiyj@gmail.com</a>
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgAds"></div>
+                                <div class="address">Belarus, Pinsk</div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </section>
 
 
             </div>
         </main>
-        <footer></footer>
+        <footer>
+            <div class="footerMain">
+                <ul class="footerMainList">
+                    <li class="footerMainItem">
+                        <a href="https://github.com/Oleggdl" target="_blank">
+                            <div class="githublogo"></div>
+                        </a>
+                    </li>
+                    <li class="footerMainItem footerMainItemText">© 2021 by Oleg Blotsky</li>
+                    <li class="footerMainItem">
+                        <a href="https://rs.school/js/" target="_blank">
+                            <div class="rsschoollogo"></div>
+                        </a>
+
+                    </li>
+                </ul>
+            </div>
+        </footer>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>
