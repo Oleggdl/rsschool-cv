@@ -490,4 +490,26 @@ footer{
     .educationSecondLeft{
         padding: 0.7rem;
     }
+   
+    .mainContainer{
+        padding: 0;
+    }
+    .footerMainItem {
+        padding: 0 0.3rem;
+    }
+    .rsschoollogo{
+        width: 6rem;
+        height: 2.25rem;
+    }
+    .githublogo{
+        width: 2rem;
+        height: 2rem;
+    }
+    .footerMainItem{
+        font-size: 0.9rem;
+    }
+    .footerMainItemText{
+        margin-top: 0.5rem;
+    }
+
 }
