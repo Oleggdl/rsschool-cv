@@ -196,7 +196,9 @@ section{
     content: url(./svg/vk.svg);
 }
 
-
+.nameOleg{
+    color: var(--mainColor);
+}
 
 
 
@@ -207,7 +209,7 @@ section{
     padding-bottom: 2rem;
 }
 .aboutMeRightHello{
-    font-size: 5vmax;
+    font-size: 2rem;
     font-weight: 900;
 }
 p{
