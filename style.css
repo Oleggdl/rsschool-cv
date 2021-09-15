@@ -171,6 +171,7 @@ section{
     width: 1.5rem;
     height: 1.5rem;
     content: url(./svg/github_white.svg);
+    margin-bottom: 0.5rem;
    
  
 }
@@ -451,6 +452,7 @@ footer{
  .linkJSclok{
      border: 0 var(--mainColor) solid;
      transition: box-shadow 0.3s linear;
+    
 
  }
  
@@ -458,14 +460,34 @@ footer{
     box-shadow: 0px 0px 0px 0.2rem var(--mainColor); 
 }
 
-/* @media screen and (max-width: 600px){
-	body {
-		font-size: 10px;
-	}
-
-    h1{
-      
-        margin-bottom: 40px;
+@media screen and (max-width: 675px){
+	.aboutMeContainer{
+        display: block;
     }
-    
-} */
+    .aboutMeLeftPhotoMyphoto{
+        margin-top: 2rem;
+    }
+    .skills{
+        margin-top: -5rem;
+    }
+    .aboutMeRight{
+        margin-top: 1rem;
+    }
+    .headerNavigationLink{
+        padding: 0.1rem 0.3rem;
+    }
+}
+@media screen and (max-width: 610px){
+	.linkJSclok{
+        display: block;
+    }
+    .projectImg{
+        margin: 0 auto;
+    }
+    .educationSecondRight{
+        padding: 0.7rem;
+    }
+    .educationSecondLeft{
+        padding: 0.7rem;
+    }
+}
