@@ -30,7 +30,9 @@ header{
 }
 .navHeader{
     min-height: 40px;
-    display: inline-block;
+    
+ 
+   
 }
 .navLogoLink{
     text-decoration: none;
@@ -39,10 +41,11 @@ header{
 }
 .headerNavigation{
     display: inline-block;
+    margin-left: 4rem;
 }
 .navLogo{
     display: inline-block;
-    margin-right: 5rem;
+    /* margin-right: 5rem; */
     margin-bottom: 1rem;
 }
 .headerNavigationItem {
@@ -513,3 +516,100 @@ footer{
     }
 
 }
+@media screen and (max-width: 960px){
+    .headerNavigation{
+        display: none;
+    }
+    .navHeader{
+        justify-content: space-between;
+        display: flex;
+    }
+}
+@media screen and (min-width: 960px){
+    .burger{
+        display: none;
+    }
+}
+
+
+.burger{
+    background: url(./svg/burger.svg);
+    width: 3rem;
+    height: 1.7rem;
+    background-size: cover;
+    border: none;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+.burger:hover{
+    background: url(./svg/burger_red.svg);
+    background-size: cover;
+    transition: 0.3s;
+}
+.burgerMenu{
+  max-width: 13rem;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: rgb(17, 17, 17);
+  padding: 1rem 2rem;
+  border-left: 1px var(--mainColor) solid;
+  border-bottom: 1px var(--mainColor) solid;
+   
+display: none;
+    
+}
+.burgerLine{
+    height: 1px;
+    width: 100%;
+    background-color: var(--mainColor);
+    display: none;
+    
+}
+.burgerAndLine{
+    display: flex;
+}
+
+
+
+
+
+
+.navBurgerLink{
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 1rem 0;
+    position: relative;
+    
+}
+.navBurgerItem{
+    text-decoration: none;
+    color: var(--textColor);
+    padding: 0.5rem 0;
+    position: relative;
+}
+
+
+.navBurgerItem:hover .navBurgerLink{
+    color: var(--mainColor);
+    transition: 0.2s linear;
+}
+     .navBurgerItem::before{
+        position: absolute;
+        display: block;
+        content: "";
+        width: 0;
+        right: 0;
+        height: 1px;
+        bottom: 5px;
+        
+        background-color: var(--mainColor);
+        transition: width ease-in-out 0.25s;
+      }
+      
+      .navBurgerItem:hover::before {
+        width: 100%;
+        left: 0;
+       
+        background-color:  var(--mainColor);
+        transition: width ease-in-out 0.25s;
+      }

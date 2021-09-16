@@ -26,7 +26,7 @@
 <body>
     <div class="wrapper">
         <header>
-            <div class="headerMain">
+            <div id="headerMain" class="headerMain">
                 <nav class="navHeader">
                     <div class="navLogo">
                         <a class="navLogoLink" href="./index.html">
@@ -50,11 +50,35 @@
                         <li class="headerNavigationItem"><a class="headerNavigationLink" href="#video">Video</a></li>
                         <li class="headerNavigationItem"><a class="headerNavigationLink" href="#contact">Contacts</a>
                         </li>
-
                     </ul>
+
+                    <button id="burger" class="burger"></button>
+
+
                 </nav>
             </div>
         </header>
+        <div class="burgerAndLine">
+        <div id="burgerline" class="burgerLine"></div>
+        <article id="burgermenu" class="burgerMenu" style="display: none;"> 
+            <nav class="navBurger">
+                <ul class="navBurgerNavigation">
+                    <li class="navBurgerItem"><a class="navBurgerLink" href="#skills">Skills</a></li>
+                    <li class="navBurgerItem"><a class="navBurgerLink" href="#education">Education</a>
+                    </li>
+                    <li class="navBurgerItem"><a class="navBurgerLink" href="#myprojects">My recent
+                            projects</a></li>
+                    <li class="navBurgerItem"><a class="navBurgerLink" href="#languages">Languages</a>
+                    </li>
+                    <li class="navBurgerItem"><a class="navBurgerLink" href="#codeexample">Code
+                            example</a></li>
+                    <li class="navBurgerItem"><a class="navBurgerLink" href="#video">Video</a></li>
+                    <li class="navBurgerItem"><a class="navBurgerLink" href="#contact">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+        </article>
+    </div>
         <main>
             <button id="scroll" class="buttontop" title="Go to top" type="button" style="display: none;">Top</button>
             <div class="mainContainer">
@@ -159,11 +183,12 @@
                     <h4 id="myprojects" class="title">
                         <div class="titleElement"></div> My recent projects
                     </h4>
-                    <a href="https://rolling-scopes-school.github.io/oleggdl-JSFEPRESCHOOL/js30/"  target="_blank">
-                        <article  class="linkJSclok section projectSection">
+                    <a href="https://rolling-scopes-school.github.io/oleggdl-JSFEPRESCHOOL/js30/" target="_blank">
+                        <article class="linkJSclok section projectSection">
                             <div class="projectSectionLeft">
                                 <h5 class="projectTitle">JS-CLOCK</h5>
-                                <p class="projectDescription">JS Clock is a JavaScript mechanical clock with moving hands</p>
+                                <p class="projectDescription">JS Clock is a JavaScript mechanical clock with moving
+                                    hands</p>
                             </div>
                             <div class="projectSectionRight">
                                 <div class="projectImg imageClock"></div>
@@ -171,11 +196,13 @@
                         </article>
                     </a>
                     <div class="linkProject"></div>
-                    <a href="https://rolling-scopes-school.github.io/oleggdl-JSFEPRESCHOOL/custom-video-player/" target="_blank">
+                    <a href="https://rolling-scopes-school.github.io/oleggdl-JSFEPRESCHOOL/custom-video-player/"
+                        target="_blank">
                         <article class="linkJSclok section projectSection">
                             <div class="projectSectionLeft">
                                 <h5 class="projectTitle">Custom Video Player</h5>
-                                <p class="projectDescription">Custom HTML5 Video Player is a video player that runs as intended by the designer and
+                                <p class="projectDescription">Custom HTML5 Video Player is a video player that runs as
+                                    intended by the designer and
                                     does not depend on the browser or device in use.</p>
 
                             </div>
@@ -292,6 +319,7 @@ volumeOff.addEventListener('click', volumeOnOffSvg)
         </footer>
     </div>
     <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
