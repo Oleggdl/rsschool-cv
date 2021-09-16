@@ -23,24 +23,19 @@ scrollToTopButton.addEventListener("click", function (e) {
 
 const burger = document.getElementById('burger');
 const burgerMenu = document.getElementById('burgermenu');
-const headerBorder = document.getElementById('headerMain')
-
-function burgerClick() {
-  
-  
 
 
-}
 burger.onclick = function(){
   if (burgerMenu.style.display === 'none') {
     $('#burgermenu').fadeIn();
     $('#burgerline').fadeIn();
-    // headerBorder.style.borderBottom = '1px rgb(255, 29, 29) solid';
   } else {
     $('#burgermenu').fadeOut();
     $('#burgerline').fadeOut();
-    // headerBorder.style.borderBottom = 'none';
   }
-  
-  
 };
+const burgerlinks = document.querySelectorAll('#burgerlink')
+burgerlinks.forEach(a=>  a.onclick = function(){
+  $('#burgermenu').fadeOut();
+    $('#burgerline').fadeOut();
+})

@@ -7,6 +7,9 @@
     --mainColor:rgb(255, 29, 29);
     --textColor:rgb(224, 224, 224);
 }
+ html{
+    scroll-behavior: smooth;
+ }
 body{
     color: var(--textColor);
     background-color: rgb(34, 34, 34);
