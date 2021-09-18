@@ -34,7 +34,7 @@ burger.onclick = function(){
     $('#burgerline').fadeOut();
   }
 };
-const burgerlinks = document.querySelectorAll('#burgerlink')
+const burgerlinks = document.querySelectorAll('burgerlink')
 burgerlinks.forEach(a=>  a.onclick = function(){
   $('#burgermenu').fadeOut();
     $('#burgerline').fadeOut();

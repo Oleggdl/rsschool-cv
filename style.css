@@ -62,7 +62,7 @@ header{
   
 .headerNavigationItem:hover .headerNavigationLink{
 color: var(--mainColor);
-transition: 0.2s linear;
+transition: 0.3s linear;
 
 }
   .headerNavigationItem::before{
@@ -351,11 +351,12 @@ pre {
   .contactsLinks{
      text-decoration: none;
      color: var(--textColor);
+     transition: 0.3s;
   }
   .contactsLinks:hover{
     text-decoration: none;
     color: var(--mainColor);
-    transition: 0.2s;
+    transition: 0.3s;
  }
  .contactsImgTg{
      background: url(./svg/telegram.svg);
@@ -543,6 +544,7 @@ footer{
     border: none;
     margin-top: 0.5rem;
     cursor: pointer;
+    transition: 0.3s;
 }
 .burger:hover{
     background: url(./svg/burger_red.svg);
@@ -583,6 +585,9 @@ display: none;
     padding: 1rem 0;
     position: relative;
     
+}
+h4{
+    display: inline-block;
 }
 .navBurgerItem{
     text-decoration: none;
