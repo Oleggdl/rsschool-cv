@@ -5,98 +5,320 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <!-- <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✌️</text></svg>"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/styles/an-old-hope.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <title>Rsschool-cv</title>
+    <link rel="stylesheet" href="./assets/css/fonts.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.2.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+
 </head>
 
 <body>
-    <div class="container">
-        <div class="header_and_article">
-            <div>
-                <header>
-                    <div class="Name">
-                        <h1><span>Blotski</span> Oleg </h1>
-                        <p class="frontend_developer">FRONTEND DEVELOPER</p>
+    <div class="wrapper">
+        <header>
+            <div id="headerMain" class="headerMain">
+                <nav class="navHeader">
+                    <div class="navLogo">
+                        <a class="navLogoLink" href="./index.html">
+                            <div class="navLogoIcon"></div>
+                            <div class="navLogoText">
+                                <h1 class="navLogoName">Oleg Blotski</h1>
+                                <span class="navLogoDescription">/ FRONT-END DEVELOPER</span>
+                            </div>
+                        </a>
                     </div>
-                </header>
-                <div class="line1"></div>
-                <div class="about_me">
-                    <p>I am 20 years old. I am from Belarus. I want to work EPAM. I am fond of
-                        programming, layout. My
-                        priorities is acquisition of skills in the field of web development.</p>
-                </div>
+                    <ul class="headerNavigation">
+                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#skills">Skills</a></li>
+                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#education">Education</a>
+                        </li>
+                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#myprojects">My recent
+                                projects</a></li>
+                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#languages">Languages</a>
+                        </li>
+                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#codeexample">Code
+                                example</a></li>
+                        <li class="headerNavigationItem"><a class="headerNavigationLink" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+
+                    <button id="burger" class="burger"></button>
+
+
+                </nav>
             </div>
-            <div class="contacts">
-                <ul>
-                    <li>
-                        <p><span>address:</span> Belarus, Brest region, Byaroza, Oktyabrskaya street, 45 </p>
-                    </li>
-                    <li>
-                        <p><span>e-mail:</span> oblotskiyj@gmail.com</p>
-                    </li>
-                    <li>
-                        <p><span>phone:</span> +375 (33) 303-42-67</p>
-                    </li>
-                </ul>
+        </header>
+        <div class="burgerAndLine">
+            <div id="burgerline" class="burgerLine"></div>
+            <div id="burgermenu" class="burgerMenu" style="display: none;">
+                <nav class="navBurger">
+                    <ul class="navBurgerNavigation">
+                        <li class="navBurgerItem"><a class="navBurgerLink burgerlink" href="#skills">Skills</a></li>
+                        <li class="navBurgerItem"><a class="navBurgerLink burgerlink" href="#education">Education</a>
+                        </li>
+                        <li class="navBurgerItem"><a class="navBurgerLink burgerlink" href="#myprojects">My recent
+                                projects</a></li>
+                        <li class="navBurgerItem"><a class="navBurgerLink burgerlink" href="#languages">Languages</a>
+                        </li>
+                        <li class="navBurgerItem"><a class="navBurgerLink burgerlink" href="#codeexample">Code
+                                example</a></li>
+                        <li class="navBurgerItem"><a class="navBurgerLink burgerlink" href="#contact">Contacts</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
         <main>
-            <div class="figure_and_skills">
-                <figure class="photo">
-                    <img src="./img/photo.jpg" alt="photo">
-                </figure>
-                <div class="experience_and_education">
-                    <section class="work_experience">
-                        <h2>Work experience</h2>
-                        <div class="line2"></div>
-                        <ul>
-                            <li>No work experience</li>
-                            <li>Passing educational practice in EPAM</li>
-                        </ul>
-                    </section>
-                    <section class="education">
-                        <h2>Education</h2>
-                        <div class="line2"></div>
-                        <p>Polessky State University</p>
-                    </section>
-                </div>
-            </div>
-            <div class="skills_and_english_and_code">
+            <button id="scroll" class="buttontop" title="Go to top" type="button" style="display: none;">Top</button>
+            <div class="mainContainer">
+                <section class="aboutMe">
+                    <div class="aboutMeContainer">
+                        <div class="aboutMeLeft">
+                            <div class="aboutMeLeftPhoto">
+                                <img class="aboutMeLeftPhotoMyphoto" src="./img/photo2.png" alt="My_photo">
+                            </div>
+                            <h3 class="aboutMeLeftName">Oleg Blotski</h3>
+                            <div class="aboutMeLeftLine"></div>
+                            <div class="aboutMeLeftJob">FRONT-END DEVELOPER</div>
+                            <ul class="aboutMeLeftLinks">
+                                <li class="aboutMeLeftLinksItem">
+                                    <a href="https://github.com/Oleggdl" class="aboutMeContactsLinks" target="_blank">
+                                        <i class="headerGithubcontact"></i></a>
+                                </li>
+                                <li class="aboutMeLeftLinksItem">
+                                    <a href="https://t.me/oleghaaaaa" class="contactsLinks" target="_blank"><i
+                                            class="headertgcontact"></i></a>
+                                </li>
+                                <li class="aboutMeLeftLinksItem">
+                                    <a href="https://vk.com/blockol" class="contactsLinks" target="_blank"><i
+                                            class="headervkcontact"></i></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="aboutMeRight">
+                            <h2 class="aboutMeRightHello">Hello, I'm <span class="nameOleg">Oleg</span></h2>
+                            <p>I am 20 years old. I am from Belarus. I like to study and learn something new.
+                                I like to read books, do physical education, listen to music of different genres.
+                                I'm interesting in good cars and bikes. I lead active and healhy lifestyle.
+                                I like to work and see the results of my work.
+                                <br>
+                                I want to work EPAM. I am fond of
+                                programming, layout. My priorities
+                                is acquisition of skills in the field
+                                of web development. In the future i’d like to work in strong team width the
+                                extraordinary prodjects.
+                            </p>
+                        </div>
+                    </div>
+                </section>
                 <section class="skills">
-                    <h2>Skills</h2>
-                    <div class="line2"></div>
-                    <Ul class="skills">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>Git</li>
-                        <li>MySql</li>
-                    </Ul>
+                    <div class="titleElement"></div>
+                    <h4 id="skills" class="title">
+                        My technical skills
+                    </h4>
+                    <div class="section">
+                        <ul class="listSkills">
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>HTML
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>CSS
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>Figma
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>JavaScript
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>Git
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>MySql
+                            </li>
+
+                        </ul>
+                    </div>
                 </section>
-                <section class="code_example">
-                    <h2>Code example</h2>
-                    <div class="line2"></div>
-                    <a class="code" href="https://oleggdl.github.io/Site/">example</a>
+                <section class="education">
+                    <div class="titleElement"></div>
+                    <h4 id="education" class="title">
+                        Education
+                    </h4>
+
+                    <div class="section">
+                        <div class="educationSecondRight">
+                            <h5 class="educationSecondDate">2021</h5>
+                            <p class="educationSecondName">JS / FRONT-END. STAGE 0</p>
+                            <p class="educationSecondPlace">Rolling Scope School</p>
+                        </div>
+                        <div class="educationSecondLeft">
+                            <p class="educationDescription">Learning HTML, CSS, JavaScript, Git, Figma, algorithms and
+                                data structures</p>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="educationSecondRight">
+                            <h5 class="educationSecondDate">2018-2022</h5>
+                            <p class="educationSecondName">SOFTWARE ENGINEER-ECONOMIST</p>
+                            <p class="educationSecondPlace">Polessky State University - Pinsk, Belarus</p>
+                        </div>
+                        <div class="educationSecondLeft">
+                            <p class="educationDescription">Studying algorithmization, object-oriented
+                                programming, web development, programming network
+                                applications, programming in the banking sector</p>
+                        </div>
+                    </div>
                 </section>
-                <section class="english">
-                    <h2>English</h2>
-                    <div class="line2"></div>
-                    <p>A2</p>
+                <section class="myprojects">
+                    <div class="titleElement"></div>
+                    <h4 id="myprojects" class="title">
+                        My recent projects
+                    </h4>
+                    <a href="https://rolling-scopes-school.github.io/oleggdl-JSFEPRESCHOOL/js30/" target="_blank">
+                        <article class="linkJSclok section projectSection">
+                            <div class="projectSectionLeft">
+                                <h5 class="projectTitle">JS-CLOCK</h5>
+                                <p class="projectDescription">JS Clock is a JavaScript mechanical clock with moving
+                                    hands</p>
+                            </div>
+                            <div class="projectSectionRight">
+                                <div class="projectImg imageClock"></div>
+                            </div>
+                        </article>
+                    </a>
+                    <div class="linkProject"></div>
+                    <a href="https://rolling-scopes-school.github.io/oleggdl-JSFEPRESCHOOL/custom-video-player/"
+                        target="_blank">
+                        <article class="linkJSclok section projectSection">
+                            <div class="projectSectionLeft">
+                                <h5 class="projectTitle">Custom Video Player</h5>
+                                <p class="projectDescription">Custom HTML5 Video Player is a video player that runs as
+                                    intended by the designer and
+                                    does not depend on the browser or device in use.</p>
+
+                            </div>
+                            <div class="projectSectionRight">
+                                <div class="projectImg imageVideo"></div>
+                            </div>
+                        </article>
+                    </a>
                 </section>
+                <section class="languages">
+                    <div class="titleElement"></div>
+                    <h4 id="languages" class="title">
+                        Languages
+                    </h4>
+                    <div class="section">
+                        <ul class="listSkills">
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>English (B2)
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>Russian (native)
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="listSkillsItemelement"></div>Belarusian
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </section>
+                <section class="codeExample">
+                    <div class="titleElement"></div>
+                    <h4 id="codeexample" class="title">
+                        Code Example
+                    </h4>
+                    <div class="section">
+                        <pre>
+                        <code class="codeJS">
+function volumeOnOffSvg() {
+  if (document.getElementById('volume').value > 0) {
+    volumeOn = document.getElementById('volume').value;
+    document.getElementById('volume').value = 0;
+    videos[activeVideo].volume = volume.value;
+    const value = ranges.value * 100;
+    ranges.style.background = `linear-gradient(to right, #24809E 0%, #24809E ${value}%, #C4C4C4 ${value}%, white 100%)`
+  } else {
+    document.getElementById('volume').value = volumeOn;
+    videos[activeVideo].volume = volume.value;
+    const value = ranges.value * 100;
+    ranges.style.background = `linear-gradient(to right, #24809E 0%, #24809E ${value}%, #C4C4C4 ${value}%, white 100%)`
+  }
+}
+volumeOff.addEventListener('click', volumeOnOffSvg) 
+                        </code>
+                    </pre>
+                    </div>
+                </section>
+                <section class="contact">
+                    <div class="titleElement"></div>
+                    <h4 id="contact" class="title">
+                        Contacts
+                    </h4>
+                    <div class="section">
+                        <ul class="listSkills">
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgTg"></div>
+                                <a href="https://t.me/oleghaaaaa" class="contactsLinks" target="_blank">Telegram</a>
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgVk"></div>
+                                <a href="https://vk.com/blockol" class="contactsLinks" target="_blank">VK</a>
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgGh"></div>
+                                <a href="https://github.com/Oleggdl" class="contactsLinks" target="_blank">GitHub</a>
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgGm"></div>
+                                <a href="mailto:oblotskiyj@gmai.com" class="contactsLinks"
+                                    target="_blank">oblotskiyj@gmail.com</a>
+                            </li>
+                            <li class="listSkillsItem">
+                                <div class="contactsImg contactsImgAds"></div>
+                                <div class="address">Belarus, Pinsk</div>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                </section>
+
+
             </div>
         </main>
         <footer>
-            <a class="github" href="https://github.com/Oleggdl">
-                <img src="img/GitHub.png" alt="github_logo">
-            </a>
-            <time class="date_footer" datetime="2021-07-18">&#169; 2021</time>
+            <div class="footerMain">
+                <ul class="footerMainList">
+                    <li class="footerMainItem">
+                        <a href="https://github.com/Oleggdl" target="_blank">
+                            <div class="githublogo"></div>
+                        </a>
+                    </li>
+                    <li class="footerMainItem footerMainItemText">© 2021 by Oleg Blotsky</li>
+                    <li class="footerMainItem">
+                        <a href="https://rs.school/js/" target="_blank">
+                            <div class="rsschoollogo"></div>
+                        </a>
 
-            <a class="img_rsschool" href="https://rs.school/js/">
-                <img src="https://rs.school/images/rs_school_js.svg" alt="rss_logo " width="100" height="40"></a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </div>
+    <script src="./script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 
 </html>
